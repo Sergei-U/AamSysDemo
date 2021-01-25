@@ -8,6 +8,6 @@ import lombok.Data;
  */
 @Data
 public class SearchQuery {
-    private String name;
+    private String productName;
     private Long id;
 }

@@ -39,6 +39,5 @@ public class ProductController {
     @RequestMapping(value = "/findByName", method = RequestMethod.POST)
     public void findProduct(@RequestBody SearchQuery searchQuery) {
         this.productService.findProductByName(searchQuery);
-
     }
 }

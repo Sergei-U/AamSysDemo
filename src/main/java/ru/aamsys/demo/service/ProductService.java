@@ -30,7 +30,7 @@ public class ProductService {
     }
 
     public Optional<Product> findProductByName(SearchQuery searchQuery) {
-        Optional<Product> product = this.productRepository.findByName(searchQuery.getName());
+        Optional<Product> product = this.productRepository.findByName(searchQuery.getProductName());
         if (product.isEmpty()) {
             product = this.productRepository.findById(searchQuery.getId());
         }
